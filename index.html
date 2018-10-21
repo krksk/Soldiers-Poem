@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Soldier's Poem</title>
+<style type="text/css">
+	body {background:rgba(0,0,0,100); perspective: 300px;}
+	#logo{position: absolute; margin: auto; width: 200px; height: 200px; left: 80%; top:0%;}
+	#m1{font-size: 70px; color: white; font-weight: 500; position: absolute; left: 10%; margin-top: 20%; animation: Move 8s linear infinite;}
+	#m2{font-size: 90px; font-weight: 300; font; color: white; position: absolute; left: 0%; margin-top: 25%; animation: Move 12s linear  reverse infinite;}
+	#m3{font-size: 80px; color: white; font-weight: 100; position: absolute; left: 10%; margin-top: 35%; animation: Move 19s linear reverse infinite;}
+	#m4{font-size: 160px; font-weight: 700; color: white; position: absolute; left: 0%; margin-top: 10%; animation: Move 11s linear reverse infinite;}
+	#m5{font-size: 110px; font-weight: 800; color: white; position: absolute; left: 50%; margin-top: 2%; animation: Move 12s linear infinite;}
+	#m6{font-size: 20px; font-weight: 200; color: white; position: absolute; left: 12%; margin-top: 33.5%; animation: Move 10s linear infinite;}
+	#m7{font-size: 20px; font-weight: 200; color: white; position: absolute; left: 12%; margin-top: 45%; animation: Move 11s linear reverse infinite;}
+	#m8{font-size: 150px; font-weight: 900; color: white; position: absolute; left: 1%; margin-top: 45%; animation: Move 10s linear infinite;}
+	#m9{font-size: 20px; font-weight: 200; color: white; position: absolute; left: 50%; margin-top: 2%; animation: Move 9s linear reverse infinite;}
+	#m10{font-size: 20px; font-weight: 200; color: white; position: absolute; left: 10%; margin-top: 60%; animation: Move 9s linear infinite;}
+	@keyframes Move{
+		0%{opacity: 0.9; left: 0px;}
+		100%{opacity: 0; left: 1000px;}
+</style>
+</head>
+<body>
+<img src="logo.png" id="logo">
+<div id="m1">Shame</div>
+<div id="m2">All Dying</div>
+<div id="m3">Your Freedom</div>
+<div id="m4">Damn well</div>
+<div id="m5">Lay down</div>
+<div id="m6">There's no justice in the world</div>
+<div id="m7">There's no justice in the world</div>
+<div id="m8">And there never was....</div>
+<div id="m9">There's no justice in the world</div>
+<div id="m10">There's no justice in the world</div>
+<audio id="testMusic">
+<script type="text/javascript">
+	var toggle = "off"
+	logo.onclick = function(){
+            if(toggle == "off"){
+            testMusic.setAttribute("src","SP.mp3")
+            toggle = "on";
+            testMusic.play();
+        	}
+            else {
+            toggle = "off";
+            testMusic.setAttribute("src","SP.mp3")
+            testMusic.paused();
+        	}
+        }
+	logo.onmouseover = function(){
+            logo.style.cursor = "pointer";
+        }
+</script>
+</body>
+</html>
